@@ -207,12 +207,12 @@ checkvertical(){
              winnerPopup=null;
         }
         let unplayed = this.state.unplayedPieces.map((piece, index) => {
-            return(<div className="tracker" key={index} id={"p"+piece} draggable='true' onDragStart={this.dragtoBoard} >{piece}</div>)
+            return(<div className="tracker" key={index} id={"p"+piece} draggable='true' onDragStart={this.dragtoBoard} ></div>)
         });
         let gameboard=this.state.gameboard.map((square, index)=>{
             if (square["piecePlayed"]) {
                 return(<div className="square" id={square["square"]} key ={index} >
-                        <div className="tracker" key={index} id={"p"+square["piecePlayed"]} style = {{margin: "auto", position: "absolute", float: "none"}} >{square["piecePlayed"]}</div>
+                        <div className="tracker" key={index} id={"p"+square["piecePlayed"]} style = {{margin: "auto", position: "absolute", float: "none"}} ></div>
                        </div>)
             }else{
                 return(<div className="square" id={square["square"]} key ={index} s onDrop={this.play.bind(this)} onDragOver={this.allowDrop.bind(this)}></div>)
