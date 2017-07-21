@@ -167,7 +167,9 @@ checkvertical(){
       ev.preventDefault();
       let square=ev.target.id;
       let i= this.state.gameboard.findIndex(i=> i.square == square);
+
       let piecePlayed=this.state.dragging;
+      console.log(piecePlayed);
       var update = this.state.unplayedPieces.slice();
       update.splice(update.indexOf(piecePlayed),1);
       this.setState({unplayedPieces:update});
@@ -184,8 +186,12 @@ checkvertical(){
   }
     dragtoBoard(e){
         e.dataTransfer.setData("text/html", e.target.id)
+        let p = e.target.id;
+        console.log(p);
+        p=p.split("p")[1]
+        console.log(p);
         this.setState({
-            dragging:e.target.id
+            dragging:p
         })
     }
     allowDrop(ev) {
@@ -193,7 +199,7 @@ checkvertical(){
    }
 
     render() {
-        console.log(this.state.winner);
+        console.log(this.state.gameboard);
         let winnerPopup;
         if (this.state.winner=="true") {
             winnerPopup=<div id="winner-popup">Winner!</div>
@@ -201,12 +207,12 @@ checkvertical(){
              winnerPopup=null;
         }
         let unplayed = this.state.unplayedPieces.map((piece, index) => {
-            return(<div className="tracker" key={index} id={piece} draggable='true' onDragStart={this.dragtoBoard} >{piece}</div>)
+            return(<div className="tracker" key={index} id={"p"+piece} draggable='true' onDragStart={this.dragtoBoard} >{piece}</div>)
         });
         let gameboard=this.state.gameboard.map((square, index)=>{
             if (square["piecePlayed"]) {
                 return(<div className="square" id={square["square"]} key ={index} >
-                        <div className="tracker" key={index} id={square["piecePlayed"]} style = {{margin: "auto", position: "absolute", float: "none"}} >{square["piecePlayed"]}</div>
+                        <div className="tracker" key={index} id={"p"+square["piecePlayed"]} style = {{margin: "auto", position: "absolute", float: "none"}} >{square["piecePlayed"]}</div>
                        </div>)
             }else{
                 return(<div className="square" id={square["square"]} key ={index} s onDrop={this.play.bind(this)} onDragOver={this.allowDrop.bind(this)}></div>)
@@ -214,7 +220,7 @@ checkvertical(){
         });
         return(
             <div>
-            <div style={{width:"25%", margin:"auto"}}>
+            <div style={{width:"40%", margin:"auto"}}>
             {gameboard}
 
             </div>
