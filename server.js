@@ -55,7 +55,7 @@ app.use(express.static('public'));
 
 // Client socket connection
 io.on('connection', (socket) => {
-	socket.on('register', onRegister);
+	// socket.on('register', onRegister);
     socket.on('updateGameboard',function (data) {
 
             emit(data);
@@ -64,13 +64,13 @@ io.on('connection', (socket) => {
 
             alertWin();
     });
-	socket.on('disconnect', onDisconnect);
-	socket.on('createGame', onCreateGame);
-	socket.on('joinGame', onJoinGame);
-	socket.on('leaveGame', onLeaveGame);
-
-	socket.on('send', onSend);
-	socket.on('play', onPlay);
+	// socket.on('disconnect', onDisconnect);
+	// socket.on('createGame', onCreateGame);
+	// socket.on('joinGame', onJoinGame);
+	// socket.on('leaveGame', onLeaveGame);
+    //
+	// socket.on('send', onSend);
+	// socket.on('play', onPlay);
 });
 function emit(data){
     io.sockets.emit('updateGameboardPositions', {

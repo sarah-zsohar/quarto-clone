@@ -57,11 +57,6 @@ h4 {
     height: inherit;
 }
 
-.leaflet-container {
-    height: 400px;
-    width: 400px;
-}
-
 #trackerPopup {
     margin: 25% 35% 0% 35%;
     position: absolute;
@@ -101,7 +96,7 @@ a {
     font-size: 2vh;
     padding: 2px;
     border-radius: 4px;
-    background-color: black;
+    background-color: #aba69f;
     color: white;
     margin: 5px;
     display: inline;
