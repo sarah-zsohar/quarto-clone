@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Parent from './Parent.jsx';
+import AddInfo from './AddInfo.jsx';
 import {
     HashRouter as Router,
     Route,
@@ -11,7 +11,7 @@ ReactDOM.render(
     <Router>
       <div>
 
-        <Route path='/' component={Parent} />
+        <Route path='/' component={AddInfo} />
 
       </div>
     </Router>,

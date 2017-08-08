@@ -174,7 +174,7 @@ a {
     height: 75px;
 }
 
-#p0000 {
+#p0b0000 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -184,7 +184,7 @@ a {
     border-style: none
 }
 
-#p0001 {
+#p0b0001 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -194,7 +194,7 @@ a {
     border-style: solid
 }
 
-#p0010 {
+#p0b0010 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -204,7 +204,7 @@ a {
     border-style: none
 }
 
-#p0011 {
+#p0b0011 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -214,7 +214,7 @@ a {
     border-style: solid
 }
 
-#p0100 {
+#p0b0100 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -224,7 +224,7 @@ a {
     border-style: none
 }
 
-#p0101 {
+#p0b0101 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -234,7 +234,7 @@ a {
     border-style: solid
 }
 
-#p0110 {
+#p0b0110 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -244,7 +244,7 @@ a {
     border-style: none
 }
 
-#p0111 {
+#p0b0111 {
     width: 20px;
     height: 20px;
     border-width: 4px;
@@ -254,7 +254,7 @@ a {
     border-style: solid
 }
 
-#p1000 {
+#p0b1000 {
     width: 40px;
     height: 40px;
     border-width: 6px;
@@ -264,7 +264,7 @@ a {
     border-style: none
 }
 
-#p1001 {
+#p0b1001 {
     width: 40px;
     height: 40px;
     border-width: 4px;
@@ -274,7 +274,7 @@ a {
     border-style: solid
 }
 
-#p1010 {
+#p0b1010 {
     width: 40px;
     height: 40px;
     border-width: 6px;
@@ -284,7 +284,7 @@ a {
     border-style: none
 }
 
-#p1011 {
+#p0b1011 {
     width: 40px;
     height: 40px;
     border-width: 4px;
@@ -294,7 +294,7 @@ a {
     border-style: solid
 }
 
-#p1100 {
+#p0b1100 {
     width: 40px;
     height: 40px;
     border-width: 6px;
@@ -304,7 +304,7 @@ a {
     border-style: none
 }
 
-#p1101 {
+#p0b1101 {
     width: 40px;
     height: 40px;
     border-width: 4px;
@@ -314,7 +314,7 @@ a {
     border-style: solid
 }
 
-#p1110 {
+#p0b1110 {
     width: 40px;
     height: 40px;
     border-width: 6px;
@@ -324,7 +324,7 @@ a {
     border-style: none
 }
 
-#p1111 {
+#p0b1111 {
     width: 40px;
     height: 40px;
     border-width: 4px;
